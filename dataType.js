@@ -41,3 +41,33 @@ const renderCart = () => {
   console.log(cart);
 };
 renderCart();
+
+
+// Koreys Changes 
+
+const books = [
+  {
+    id: 0001,
+    name: "How to do JavaScript",
+    price: 100,
+    quantity: 3,
+    length: "long",
+  },
+  {
+    id: 0002,
+    name: "How NOT to do JavaScript",
+    price: 20,
+    quantity: 3,
+    length: "short",
+  },
+];
+
+let shoppingCart = [];
+
+function addToCart(object) {
+  shoppingCart.push(object);
+}
+
+addToCart(books[0]);
+
+console.log(shoppingCart);
